@@ -9,6 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using SistemaVenta.DAL.Repositorios.Contrato;
+using SistemaVenta.DAL.Repositorios;
+
+using SistemaVentas.Utility;
+using SistemaVentas.Utility;
+
+
 namespace SistemaVentas.IOC
 {
     public static class Dependencia
@@ -19,6 +26,11 @@ namespace SistemaVentas.IOC
             {
                 Options.UseSqlServer(configuration.GetConnectionString("cadenaSQl"));
             });
+
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IVentaRepository, VentaRepository>();
+
+            services.AddAutoMapper(typeof(AutoMapperProfile));
         }
 
     }

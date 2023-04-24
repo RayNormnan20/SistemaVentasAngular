@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "SistemaVenta.DAL/1.0.0": {
         "dependencies": {
-          "SistemaVentas.Model": "1.0.0"
+          "SistemaVenta.Model": "1.0.0"
         },
         "runtime": {
           "SistemaVenta.DAL.dll": {}
@@ -606,12 +606,12 @@
           }
         }
       },
-      "SistemaVentas.Model/1.0.0": {
+      "SistemaVenta.Model/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1"
         },
         "runtime": {
-          "SistemaVentas.Model.dll": {}
+          "SistemaVenta.Model.dll": {}
         }
       }
     }
@@ -1049,7 +1049,7 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "SistemaVentas.Model/1.0.0": {
+    "SistemaVenta.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

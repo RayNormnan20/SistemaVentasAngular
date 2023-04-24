@@ -8,9 +8,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SistemaVenta.DAL\SistemaVenta.DAL.csproj" />
-    <ProjectReference Include="..\SistemaVentas.DTO\SistemaVentas.DTO.csproj" />
-    <ProjectReference Include="..\SistemaVentas.Model\SistemaVentas.Model.csproj" />
-    <ProjectReference Include="..\SistemaVentas.Utility\SistemaVentas.Utility.csproj" />
+    <ProjectReference Include="..\SistemaVentas.DTO\SistemaVenta.DTO.csproj" />
+    <ProjectReference Include="..\SistemaVentas.Model\SistemaVenta.Model.csproj" />
+    <ProjectReference Include="..\SistemaVentas.Utility\SistemaVenta.Utility.csproj" />
   </ItemGroup>
 
 </Project>

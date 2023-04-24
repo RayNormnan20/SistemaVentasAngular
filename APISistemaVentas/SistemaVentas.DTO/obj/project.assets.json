@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVentas.DTO.csproj",
-      "projectName": "SistemaVentas.DTO",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVentas.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVenta.DTO.csproj",
+      "projectName": "SistemaVenta.DTO",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVenta.DTO.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\obj\\",
       "projectStyle": "PackageReference",

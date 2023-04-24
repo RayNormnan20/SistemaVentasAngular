@@ -1028,17 +1028,17 @@
           }
         }
       },
-      "SistemaVentas.Model/1.0.0": {
+      "SistemaVenta.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1"
         },
         "compile": {
-          "bin/placeholder/SistemaVentas.Model.dll": {}
+          "bin/placeholder/SistemaVenta.Model.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SistemaVentas.Model.dll": {}
+          "bin/placeholder/SistemaVenta.Model.dll": {}
         }
       }
     }
@@ -3185,15 +3185,15 @@
         "version.txt"
       ]
     },
-    "SistemaVentas.Model/1.0.0": {
+    "SistemaVenta.Model/1.0.0": {
       "type": "project",
-      "path": "../SistemaVentas.Model/SistemaVentas.Model.csproj",
-      "msbuildProject": "../SistemaVentas.Model/SistemaVentas.Model.csproj"
+      "path": "../SistemaVentas.Model/SistemaVenta.Model.csproj",
+      "msbuildProject": "../SistemaVentas.Model/SistemaVenta.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "SistemaVentas.Model >= 1.0.0"
+      "SistemaVenta.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3223,8 +3223,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.Model\\SistemaVentas.Model.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.Model\\SistemaVentas.Model.csproj"
+            "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.Model\\SistemaVenta.Model.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.Model\\SistemaVenta.Model.csproj"
             }
           }
         }

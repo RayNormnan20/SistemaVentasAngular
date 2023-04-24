@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "jBwqKx5ti6vS3QRQtFr07/lr3iDrIxBj6CI+dseR36A=",
-  "Source": "SistemaVentas.API",
-  "BasePath": "_content/SistemaVentas.API",
+  "Hash": "Iaq23qBsveJpOEGI29H8fJWsXjj3lWaAHbOI0YFOsBc=",
+  "Source": "SistemaVenta.API",
+  "BasePath": "_content/SistemaVenta.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

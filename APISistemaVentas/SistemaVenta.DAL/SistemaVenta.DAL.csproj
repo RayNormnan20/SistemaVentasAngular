@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SistemaVentas.Model\SistemaVentas.Model.csproj" />
+    <ProjectReference Include="..\SistemaVentas.Model\SistemaVenta.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>

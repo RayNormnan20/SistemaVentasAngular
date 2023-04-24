@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nie45zH+tiPt4aPl+JTL6j7IexVnN6TZ1yu053BHznfDrrz1MAUiDItVMNYrHI2gquMnN6tFZxue1SV39muXIg==",
+  "dgSpecHash": "f/2FWEvCK+SyJFfNwxDcRfkVywqUg/s6wDSXrBL77kVUfgG5JvHi8wHqouDw9E/jLMYJ7Wd+kNNNl9JdpcoLfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVentas.DTO.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVenta.DTO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
