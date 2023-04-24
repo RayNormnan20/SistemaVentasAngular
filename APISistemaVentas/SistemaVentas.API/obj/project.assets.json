@@ -3746,11 +3746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.API\\SistemaVentas.API.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.API\\SistemaVentas.API.csproj",
       "projectName": "SistemaVentas.API",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.API\\SistemaVentas.API.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.API\\SistemaVentas.API.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.API\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3767,14 +3767,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj"
+            "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj"
             },
-            "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVentas.DTO.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVentas.DTO.csproj"
+            "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVentas.DTO.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.DTO\\SistemaVentas.DTO.csproj"
             },
-            "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.IOC\\SistemaVentas.IOC.csproj": {
-              "projectPath": "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.IOC\\SistemaVentas.IOC.csproj"
+            "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.IOC\\SistemaVentas.IOC.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.IOC\\SistemaVentas.IOC.csproj"
             }
           }
         }

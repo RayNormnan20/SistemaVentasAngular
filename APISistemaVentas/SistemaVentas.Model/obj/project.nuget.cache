@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yH3mf4ob0/RXQ27qr+Gak7DJW4W4YBZUX2qTqTejnAQAsP6NcPoUK1XqKTdr0pqu/kMQat4F6OGFj9WymuI4xQ==",
+  "dgSpecHash": "AkFYkDDQF6NAEjIQup6mTEaBx8zEwG5KAWYyyGKVV21wVeYor6cGjokxrWfnkP54Pj3VZOe6XZliBJMP9fzZsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\ANGULAR\\APISistemaVentas\\SistemaVentas.Model\\SistemaVentas.Model.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\GitHub\\SistemaVentasAngular\\APISistemaVentas\\SistemaVentas.Model\\SistemaVentas.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -10,4 +10,8 @@
     <ProjectReference Include="..\SistemaVentas.Model\SistemaVentas.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DBContext\NewFolder\" />
+  </ItemGroup>
+
 </Project>
