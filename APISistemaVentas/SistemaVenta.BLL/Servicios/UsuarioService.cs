@@ -65,8 +65,15 @@ namespace SistemaVenta.BLL.Servicios
             try
             {
                 var usuarioCreado = await _usuarioRepositorio.Crear(_mapper.Map<Usuario>(modelo));
-                if(usuarioCreado.IdUsuario == 0)
-                    throw new TaskCanceledException("No se `pudo crear");
+                if (usuarioCreado.IdUsuario == 0)
+                    throw new TaskCanceledException("No se pudo crear");
+
+                var query = await _usuarioRepositorio.Consultar(u => u.IdUsuario == usuarioCreado.IdUsuario);
+
+                usuarioCreado = query.Include(rol => rol.IdRolNavigation).First();
+                return _mapper.Map<UsuarioDTO>(usuarioCreado);
+
+            
 
             }
             catch (Exception)
@@ -76,11 +83,28 @@ namespace SistemaVenta.BLL.Servicios
             }
         }
 
-        public Task<bool> editar(UsuarioDTO modelo)
+        public async Task<bool> editar(UsuarioDTO modelo)
         {
             try
             {
+                var usuarioModelo = _mapper.Map<Usuario>(modelo);
 
+                var usuarioEncontrado = await _usuarioRepositorio.Obtener(u => u.IdUsuario == usuarioModelo.IdUsuario);
+
+                if (usuarioEncontrado == null)
+                    throw new TaskCanceledException("El usuario no existe");
+
+                usuarioEncontrado.NombreCompleto = usuarioModelo.NombreCompleto;
+                usuarioEncontrado.Correo = usuarioModelo.Correo;
+                usuarioEncontrado.IdRol = usuarioModelo.IdRol;
+                usuarioEncontrado.Clave = usuarioModelo.Clave;
+                usuarioEncontrado.EsActivo = usuarioModelo.EsActivo;
+
+                bool respuesta = await _usuarioRepositorio.Editar(usuarioEncontrado);
+
+                if (!respuesta)
+                    throw new TaskCanceledException("No se pudo editar");
+                return respuesta;
             }
             catch (Exception)
             {
@@ -89,11 +113,20 @@ namespace SistemaVenta.BLL.Servicios
             }
         }
 
-        public Task<bool> Eliminar(int id)
+        public async Task<bool> Eliminar(int id)
         {
             try
             {
+                var usuarioEncontrado = await _usuarioRepositorio.Obtener(u => u.IdUsuario == id);
 
+                if (usuarioEncontrado == null)
+                    throw new TaskCanceledException("El usuario no existe");
+
+                bool respuesta = await _usuarioRepositorio.Eiminar(usuarioEncontrado);
+
+                if (!respuesta)
+                    throw new TaskCanceledException("No se pudo eliminar");
+                return respuesta;
             }
             catch (Exception)
             {
