@@ -9,25 +9,25 @@ namespace SistemaVenta.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriaController : ControllerBase
+    public class MenuController : ControllerBase
     {
-        private readonly ICategoriaService _caregoriaServicio;
+        private readonly IMenuService _menuServicio;
 
-        public CategoriaController(ICategoriaService caregoriaServicio)
+        public MenuController(IMenuService menuServicio)
         {
-            _caregoriaServicio = caregoriaServicio;
+            _menuServicio = menuServicio;
         }
 
         [HttpGet]
         [Route("Lista")]
-        public async Task<IActionResult> Lista()
+        public async Task<IActionResult> Lista(int idUsuario)
         {
-            var rsp = new Response<List<CategoriaDTO>>();
+            var rsp = new Response<List<MenuDTO>>();
 
             try
             {
                 rsp.status = true;
-                rsp.Value = await _caregoriaServicio.Lista();
+                rsp.Value = await _menuServicio.Lista(idUsuario);
             }
             catch (Exception ex)
             {
@@ -38,5 +38,4 @@ namespace SistemaVenta.API.Controllers
             return Ok(rsp);
         }
     }
-
 }

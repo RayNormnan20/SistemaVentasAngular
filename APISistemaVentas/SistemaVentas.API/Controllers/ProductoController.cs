@@ -4,29 +4,31 @@ using Microsoft.AspNetCore.Mvc;
 using SistemaVenta.BLL.Servicios.Contrato;
 using SistemaVentas.DTO;
 using SistemaVenta.API.Utilidad;
+using SistemaVentas.Model;
 
 namespace SistemaVenta.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class ProductoController : ControllerBase
     {
-        private readonly IUsuarioServices _usuarioServicio;
+        private readonly IProductoService _productoServicio;
 
-        public UsuarioController(IUsuarioServices usuarioServicio)
+        public ProductoController(IProductoService productoServicio)
         {
-            _usuarioServicio = usuarioServicio;
+            _productoServicio = productoServicio;
         }
+
         [HttpGet]
         [Route("Lista")]
         public async Task<IActionResult> Lista()
         {
-            var rsp = new Response<List<UsuarioDTO>>();
+            var rsp = new Response<List<ProductoDTO>>();
 
             try
             {
                 rsp.status = true;
-                rsp.Value = await _usuarioServicio.Lista();
+                rsp.Value = await _productoServicio.Lista();
             }
             catch (Exception ex)
             {
@@ -36,35 +38,17 @@ namespace SistemaVenta.API.Controllers
             }
             return Ok(rsp);
         }
-        [HttpPost]
-        [Route("IniciarSesion")]
-        public async Task<IActionResult> IniciarSesion([FromBody] LoginDTO login)
-        {
-            var rsp = new Response<SesionDTO>();
 
-            try
-            {
-                rsp.status = true;
-                rsp.Value = await _usuarioServicio.validarCredenciales(login.Correo, login.Clave);
-            }
-            catch (Exception ex)
-            {
-
-                rsp.status = false;
-                rsp.msg = ex.Message;
-            }
-            return Ok(rsp);
-        }
         [HttpPost]
         [Route("Guardar")]
-        public async Task<IActionResult> Guardar([FromBody] UsuarioDTO usuario)
+        public async Task<IActionResult> Guardar([FromBody] ProductoDTO producto)
         {
-            var rsp = new Response<UsuarioDTO>();
+            var rsp = new Response<ProductoDTO>();
 
             try
             {
                 rsp.status = true;
-                rsp.Value = await _usuarioServicio.Crear(usuario);
+                rsp.Value = await _productoServicio.Crear(producto);
             }
             catch (Exception ex)
             {
@@ -74,16 +58,17 @@ namespace SistemaVenta.API.Controllers
             }
             return Ok(rsp);
         }
+
         [HttpPut]
         [Route("Editar")]
-        public async Task<IActionResult> Editar([FromBody] UsuarioDTO usuario)
+        public async Task<IActionResult> Editar([FromBody] ProductoDTO producto)
         {
             var rsp = new Response<bool>();
 
             try
             {
                 rsp.status = true;
-                rsp.Value = await _usuarioServicio.Editar(usuario);
+                rsp.Value = await _productoServicio.Editar(producto);
             }
             catch (Exception ex)
             {
@@ -103,7 +88,7 @@ namespace SistemaVenta.API.Controllers
             try
             {
                 rsp.status = true;
-                rsp.Value = await _usuarioServicio.Eliminar(id);
+                rsp.Value = await _productoServicio.Eliminar(id);
             }
             catch (Exception ex)
             {
@@ -113,6 +98,5 @@ namespace SistemaVenta.API.Controllers
             }
             return Ok(rsp);
         }
-
     }
 }

@@ -60,7 +60,7 @@ namespace SistemaVenta.BLL.Servicios
                 throw;
             }
         }
-        public async Task<UsuarioDTO> crear(UsuarioDTO modelo)
+        public async Task<UsuarioDTO> Crear(UsuarioDTO modelo)
         {
             try
             {
@@ -83,7 +83,7 @@ namespace SistemaVenta.BLL.Servicios
             }
         }
 
-        public async Task<bool> editar(UsuarioDTO modelo)
+        public async Task<bool> Editar(UsuarioDTO modelo)
         {
             try
             {

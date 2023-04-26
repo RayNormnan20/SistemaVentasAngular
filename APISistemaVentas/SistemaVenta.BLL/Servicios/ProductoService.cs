@@ -41,7 +41,7 @@ namespace SistemaVenta.BLL.Servicios
             }
         }
 
-        public async Task<ProductoDTO> crear(ProductoDTO modelo)
+        public async Task<ProductoDTO> Crear(ProductoDTO modelo)
         {
             try
             {
@@ -59,7 +59,7 @@ namespace SistemaVenta.BLL.Servicios
             }
         }
 
-        public async Task<bool> editar(ProductoDTO modelo)
+        public async Task<bool> Editar(ProductoDTO modelo)
         {
             try
             {

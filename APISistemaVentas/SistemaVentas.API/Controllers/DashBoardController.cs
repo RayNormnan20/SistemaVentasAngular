@@ -5,29 +5,30 @@ using SistemaVenta.BLL.Servicios.Contrato;
 using SistemaVentas.DTO;
 using SistemaVenta.API.Utilidad;
 
+
 namespace SistemaVenta.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriaController : ControllerBase
+    public class DashBoardController : ControllerBase
     {
-        private readonly ICategoriaService _caregoriaServicio;
+        private readonly IDashBoardService _sashBoardServicio;
 
-        public CategoriaController(ICategoriaService caregoriaServicio)
+        public DashBoardController(IDashBoardService sashBoardServicio)
         {
-            _caregoriaServicio = caregoriaServicio;
+            _sashBoardServicio = sashBoardServicio;
         }
 
         [HttpGet]
-        [Route("Lista")]
-        public async Task<IActionResult> Lista()
+        [Route("Resumen")]
+        public async Task<IActionResult> Resumen()
         {
-            var rsp = new Response<List<CategoriaDTO>>();
+            var rsp = new Response<DashBoardDTO>();
 
             try
             {
                 rsp.status = true;
-                rsp.Value = await _caregoriaServicio.Lista();
+                rsp.Value = await _sashBoardServicio.Resumen();
             }
             catch (Exception ex)
             {
@@ -38,5 +39,4 @@ namespace SistemaVenta.API.Controllers
             return Ok(rsp);
         }
     }
-
 }
