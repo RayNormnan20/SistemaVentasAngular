@@ -1,4 +1,3 @@
-
 .body{
 
     display: flex;
@@ -10,15 +9,16 @@
 
 .loginCard{
     max-width: 328px !important;
-    margin: 2em auto;
-    text-align: center;
+    margin:2em auto;
+    text-align:center;
     max-height: 600px;
 }
-
 .header{
     text-align: center;
+
 }
 
 .full-width{
-    width: 80%;
+
+    width:80%
 }

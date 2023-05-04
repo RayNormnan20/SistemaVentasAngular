@@ -6,7 +6,11 @@ insert into Rol(nombre) values
 go
 
 insert into Usuario(nombreCompleto,correo,idRol,clave) values 
-('codigo estudiante','code@example.com',1,'123')
+('Miguel Chavez Ramos','Miguel@gmail.com',2,'123')
+insert into Usuario(nombreCompleto,correo,idRol,clave) values 
+('Elizabeth La Rosa Cabanillas','Elizabeth@gmail.com',3,'123')
+insert into Usuario(nombreCompleto,correo,idRol,clave) values 
+('Jose Pintado Yamo','josepintadoyamo@gmail.com	',1,'123')
 
 go
 
